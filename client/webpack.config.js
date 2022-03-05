@@ -14,6 +14,7 @@ module.exports = () => {
       main: './src/js/index.js',
       install: './src/js/install.js'
     },
+    devtool: 'source-map',
     output: {
       filename: '[name].bundle.js',
       path: path.resolve(__dirname, 'dist'),
@@ -46,7 +47,7 @@ module.exports = () => {
           use: {
             loader: 'babel-loader',
             options: {
-              presets: ['@babel/preset-env'],
+              presets: ['@babel/preset-env']
             },
           },
         },
