@@ -1,3 +1,5 @@
+import "core-js/stable";
+import "regenerator-runtime/runtime";
 import { Workbox } from 'workbox-window';
 import Editor from './editor';
 import './database';
